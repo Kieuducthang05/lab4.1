@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<title>Form Đăng ký</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<form id="form1" method="post" action="newacc.php">
+  <div>
+    <label class="HangMoi">Họ tên:</label>
+    <input type="text" id="hoten" name="hoten" class="TruongBatbuoc"/>
+    <span id="loi_hoten" class="Baoloi"></span>
+    <br/>
+  </div>
+  <div>
+    <label class="HangMoi">Địa chỉ:</label>
+    <input type="text" id="diachi" name="diachi"/>
+    <br/>
+  </div>
+  <div>
+    <label class="HangMoi">Giới tính:</label>
+    <label class="radio-container">
+      <input type="radio" id="nam" name="gioitinh" checked="checked"/> Nam
+      <span class="checkmark"></span><span class="checkmark2"></span>
+    </label>
+    <label class="radio-container">
+      <input type="radio" id="nu" name="gioitinh"/> Nữ
+      <span class="checkmark"></span><span class="checkmark2"></span>
+    </label>
+    <br/>
+  </div>
+  <div>
+    <label class="HangMoi">Ngày sinh:</label>
+    <input type="text" id="ngaysinh" name="ngaysinh" placeholder="nn/tt/nnnn" class="TruongBatbuoc"/>
+    <span id="loi_ngaysinh" class="Baoloi"></span>
+    <br/>
+  </div>
+  <div>
+    <label class="HangMoi">E-mail:</label>
+    <input type="text" id="email" name="email" class="TruongBatbuoc"/>
+    <span id="loi_email" class="Baoloi"></span>
+    <br/>
+  </div>
+  <div>
+    <label class="HangMoi">Điện thoại:</label>
+    <input type="text" id="codinh" name="codinh"/>
+    <br/>
+  </div>
+  <div>
+    <label class="HangMoi">Khóa đăng ký:</label>
+    <label class="checkbox-container">
+      <input type="checkbox" id="english" name="english"/> Tiếng Anh
+      <span class="checkmark"></span><span class="checkmark2"></span>
+    </label>
+    <label class="checkbox-container">
+      <input type="checkbox" id="quantri" name="quantri"/> Quản trị
+      <span class="checkmark"></span><span class="checkmark2"></span>
+    </label>
+    <label class="checkbox-container">
+      <input type="checkbox" id="it" name="it"/> CNTT
+      <span class="checkmark"></span><span class="checkmark2"></span>
+    </label>
+    <br/>
+  </div>
+  <div>
+    <label class="HangMoi">Tên sử dụng:</label>
+    <input type="text" id="username" name="username" class="TruongBatbuoc"/>
+    <span id="loi_username" class="Baoloi"></span>
+    <br/>
+  </div>
+  <div>
+    <label class="HangMoi">Mật khẩu:</label>
+    <input type="password" id="pass" name="pass" class="TruongBatbuoc"/>
+    <span id="loi_pass" class="Baoloi"></span>
+    <br/>
+  </div>
+  <div>
+    <label class="HangMoi">Gõ lại mật khẩu:</label>
+    <input type="password" id="repass" name="repass" class="TruongBatbuoc"/>
+    <span id="loi_repass" class="Baoloi"></span>
+    <br/>
+  </div>
+  <div>
+    <label class="HangMoi">Ghi chú:</label>
+    <textarea id="ghichu" name="ghichu"></textarea>
+    <br/>
+  </div>
+  <div>
+    <label class="HangMoi">Ảnh chân dung:</label>
+    <input type="file" name="FileUpload1" id="FileUpload1" accept=".png,.jpg" />
+    <img class="preview nodisplay" src="" style="height:200px;display:block;margin-top:10px;"/>
+    <br/>
+  </div>
+  <div>
+    <label class="HangMoi">&nbsp;</label>
+    <input type="button" onclick="Chapnhan();" value="Chấp nhận"/>
+    <input type="button" onclick="Boqua();" value="Bỏ qua"/>
+    <br/>
+  </div>
+</form>
+<script src="form.js"></script>
+</body>
+</html>
